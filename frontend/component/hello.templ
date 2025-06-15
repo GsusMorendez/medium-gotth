@@ -1,0 +1,32 @@
+package component
+
+
+templ HelloWorl(name string) {
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <link rel="stylesheet" href="frontend/static/css/output.css">
+        </head>
+        <body>
+            <div class="relative min-h-screen bg-gradient-to-br from-purple-600 to-indigo-800 flex items-center justify-center p-4 sm:p-8">
+                <div class="absolute inset-0 bg-black opacity-30"></div>
+                <div class="relative z-10 bg-white dark:bg-gray-800 rounded-xl shadow-2xl p-6 sm:p-10 text-center max-w-lg mx-auto transform transition-all duration-500 hover:scale-105 hover:shadow-3xl">
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 dark:text-white mb-4 sm:mb-6 leading-tight">
+                        Welcome, <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-yellow-500">{ name }!</span>
+                    </h1>
+                    <p class="text-base sm:text-lg text-gray-700 dark:text-gray-300 mb-6 sm:mb-8">
+                        Dive into the power of <strong>Templ</strong> and <strong>Tailwind CSS</strong> {"for"} building fast, beautiful web interfaces!
+                    </p>
+                    <button class="bg-blue-600 hover:bg-blue-700 active:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 text-white font-bold py-3 px-8 rounded-full shadow-lg transform transition-all duration-300 hover:-translate-y-1 hover:scale-105">
+                        Explore More
+                    </button>
+                    <div class="mt-8 text-sm text-gray-500 dark:text-gray-400">
+                        Built with ❤️ and Go.
+                    </div>
+                </div>
+            </div>
+        </body>
+    </html>
+}
